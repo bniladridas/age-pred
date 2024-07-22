@@ -4,6 +4,10 @@
 
 This Streamlit application provides a user-friendly interface for predicting a person's age from an image. Simply upload an image, and the app will display the predicted age.
 
+## Images
+
+![data](/data/img/download.png)
+
 ## Features
 
 - **Image Upload:** Upload images in common formats (JPEG, PNG).
@@ -70,7 +74,7 @@ age-prediction-app/
 **Using Your Own Data:**
 - **Format:** Images should be in `JPEG/PNG` format.
 - **Directory Structure:** Create a `data` directory in the project root and organize your images into subfolders for training and testing.
-- **Preprocessing:**  Ensure your images are preprocessed in the same way as the original training data (e.g., resized to [Image Size], normalized pixel values). 
+- **Preprocessing:**  Ensure your images are preprocessed in the same way as the original training data. 
 
 ## Model 
 
