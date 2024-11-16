@@ -1,5 +1,6 @@
+// src/AgePredictionDemo.js
 import React, { useState } from 'react';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import { Card, CardHeader, CardContent } from './components/ui/Card'; // Adjust path if necessary
 import { Brain, Upload, Gauge, Users } from 'lucide-react';
 
 const AgePredictionDemo = () => {
@@ -75,7 +76,7 @@ const AgePredictionDemo = () => {
               </div>
               <div>
                 <h3 className="font-medium">Easy Upload</h3>
-                <p className="text-sm text-gray-600">Drag & drop interface for instant processing</p>
+                <p className="text-sm text-gray-600">Drag and drop images or click to upload.</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
@@ -83,43 +84,31 @@ const AgePredictionDemo = () => {
                 <Gauge className="w-5 h-5 text-blue-600" />
               </div>
               <div>
-                <h3 className="font-medium">Real-time Results</h3>
-                <p className="text-sm text-gray-600">Get age predictions in seconds</p>
+                <h3 className="font-medium">Fast Predictions</h3>
+                <p className="text-sm text-gray-600">Get results in under 2 seconds.</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <div className="p-2 bg-purple-50 rounded-lg">
-                <Brain className="w-5 h-5 text-purple-600" />
+              <div className="p-2 bg-yellow-50 rounded-lg">
+                <Users className="w-5 h-5 text-yellow-600" />
               </div>
               <div>
-                <h3 className="font-medium">Advanced AI</h3>
-                <p className="text-sm text-gray-600">Powered by CNN architecture</p>
+                <h3 className="font-medium">User -Friendly Interface</h3>
+                <p className="text-sm text-gray-600">Intuitive design for all users.</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <div className="p-2 bg-orange-50 rounded-lg">
-                <Users className="w-5 h-5 text-orange-600" />
+              <div className="p-2 bg-red-50 rounded-lg">
+                <Brain className="w-5 h-5 text-red-600" />
               </div>
               <div>
-                <h3 className="font-medium">Multi-face Detection</h3>
-                <p className="text-sm text-gray-600">Process multiple faces simultaneously</p>
+                <h3 className="font-medium">AI-Powered</h3>
+                <p className="text-sm text-gray-600">Utilizes state-of-the-art AI technology.</p>
               </div>
             </div>
           </div>
         </CardContent>
       </Card>
-
-      {/* GitHub Link */}
-      <div className="flex justify-center mt-6">
-        <a 
-          href="https://github.com/bniladridas/age-pred" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="px-6 py-3 text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors"
-        >
-          View on GitHub
-        </a>
-      </div>
     </div>
   );
 };
